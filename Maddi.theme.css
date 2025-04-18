@@ -1,7 +1,7 @@
 /**
  * @name Maddi
  * @author meganekkogekiluv
- * @description QOL improvements.
+ * @description QOL improvements. Mostly a compilation of others' works.
  * @version 1.0.0
  */
 
@@ -495,3 +495,12 @@ section[class^="panels"] > [class*="mask"]:has([class*="questRewardTile"]) { dis
 
 /* Hide apps button */
 form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] { display: none; } }
+
+/* Remove gap between "... online" and first server icon */
+.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+    & .scroller_ef3116 {
+        > div[style]:not([class]) {
+            min-height: 0px;
+        }
+    }
+}
