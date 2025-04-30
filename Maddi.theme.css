@@ -9,10 +9,11 @@
 @import url(https://croissantdunord.github.io/discord-adblock/adblock-extras.css);
 @import url(https://luckfire.github.io/amoled-cord/src/amoled-cord.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
-@import url("https://milbits.github.io/oldcord/src/components/vars.css");
-@import url("https://milbits.github.io/oldcord/src/components/color.css");
-@import url("https://milbits.github.io/oldcord/src/components/imgs.css");
-@import url("https://milbits.github.io/oldcord/src/components/redesign.css");
+@import url(https://milbits.github.io/oldcord/src/components/vars.css);
+@import url(https://milbits.github.io/oldcord/src/components/color.css);
+@import url(https://milbits.github.io/oldcord/src/components/imgs.css);
+@import url(https://milbits.github.io/oldcord/src/components/redesign.css);
+@import url(https://tonsi.neocities.org/maddicord/vars.css);
 
 /* Hide quests from the gift inventory */
 div[class^="container_"][style*="discovery/quest-mountain"] { display: none; }
