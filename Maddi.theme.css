@@ -40,15 +40,11 @@ section[class^="panels"] > [class*="mask"]:has([class*="questRewardTile"]) { dis
 form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] { display: none; } }
 
 /* Remove gap between "... online" and first server icon */
-/* Fix 0 margin between server icons */
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
     & .scroller_ef3116 {
         > div[style]:not([class]) {
             min-height: 0;
         }
-    }
-    & .listItem__650eb {
-        margin: 0 0 8px;
     }
 }
 
