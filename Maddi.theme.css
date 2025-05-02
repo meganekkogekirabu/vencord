@@ -52,3 +52,7 @@ form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] {
 .scrollableContainer__74017 {
     border-radius: 3px;
 }
+
+:where(.visual-refresh) .themedBackground__74017 {
+    background: var(--black);
+}
