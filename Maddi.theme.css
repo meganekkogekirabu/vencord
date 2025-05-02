@@ -54,5 +54,5 @@ form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] {
 }
 
 :where(.visual-refresh) .themedBackground__74017 {
-    background: var(--black);
+    background: var(--black) !important;
 }
