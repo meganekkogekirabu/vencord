@@ -14,6 +14,13 @@
 @import url(https://github.com/meganekkogekirabu/vencord/raw/refs/heads/main/vars.css);
 @import url(https://github.com/meganekkogekirabu/vencord/raw/refs/heads/main/amoled-cord.theme.css);
 
+@font-face {
+    font-family: "Gulim";
+    src:
+        local("Baekmuk Gulim"),
+        local("Gulim");
+}
+
 /* Hide quests from the gift inventory */
 div[class^="container_"][style*="discovery/quest-mountain"] { display: none; }
 
