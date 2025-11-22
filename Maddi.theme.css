@@ -7,19 +7,6 @@
 @import url(https://croissantdunord.github.io/discord-adblock/adblock.css);
 @import url(https://croissantdunord.github.io/discord-adblock/adblock-extras.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
-@import url(https://milbits.github.io/oldcord/src/components/vars.css);
-@import url(https://milbits.github.io/oldcord/src/components/color.css);
-@import url(https://milbits.github.io/oldcord/src/components/imgs.css);
-@import url(https://milbits.github.io/oldcord/src/components/redesign.css);
-@import url(https://github.com/meganekkogekirabu/vencord/raw/refs/heads/main/vars.css);
-@import url(https://github.com/meganekkogekirabu/vencord/raw/refs/heads/main/amoled-cord.theme.css);
-
-@font-face {
-    font-family: "Gulim";
-    src:
-        local("Baekmuk Gulim"),
-        local("Gulim");
-}
 
 /* Hide quests from the gift inventory */
 div[class^="container_"][style*="discovery/quest-mountain"] { display: none; }
@@ -45,20 +32,14 @@ section[class^="panels"] > [class*="mask"]:has([class*="questRewardTile"]) { dis
 /* Hide apps button */
 form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] { display: none; } }
 
-/* Remove gap between "... online" and first server icon */
-.base_c48ade .sidebar_c48ade > .guilds_c48ade {
-    & .scroller_ef3116 {
-        > div[style]:not([class]) {
-            min-height: 0;
-        }
-    }
+.wrapper_ebee1d {
+  display: none;
 }
 
-/* Fix extra border around the message box */
-.scrollableContainer__74017 {
-    border-radius: 3px;
-}
-
-:where(.visual-refresh) .themedBackground__74017 {
-    background: var(--black) !important;
+span[class^="chipletContainerInner__"]:has(img[class^="badge__"]) {
+  display: revert;
+  border-radius: 20px;
+  background-color: var(--background-base-low);
+  padding-right: 5px;
+  border: solid 1px var(--border-faint);
 }
