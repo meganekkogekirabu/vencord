@@ -5,7 +5,6 @@
  */
 
 @import url(https://croissantdunord.github.io/discord-adblock/adblock.css);
-@import url(https://croissantdunord.github.io/discord-adblock/adblock-extras.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
 
 /* Hide quests from the gift inventory */
@@ -29,17 +28,5 @@ div[class^="nowPlayingColumn"] { display: none; }
 /* Hide "Quest Reward" Panel above user info */
 section[class^="panels"] > [class*="mask"]:has([class*="questRewardTile"]) { display: none; }
 
-/* Hide apps button */
-form > div[class^="channelBottomBarArea_"] { div[class^="channelAppLauncher_"] { display: none; } }
-
-.wrapper_ebee1d {
-  display: none;
-}
-
-span[class^="chipletContainerInner__"]:has(img[class^="badge__"]) {
-  display: revert;
-  border-radius: 20px;
-  background-color: var(--background-base-low);
-  padding-right: 5px;
-  border: solid 1px var(--border-faint);
-}
+/* Hide quests panel in DMs */
+a[href="/quest-home"] { display: none; }
